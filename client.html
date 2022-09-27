@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="theme-color" content="#f13ffc"/>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>404</title>
+        <!--<meta http-equiv="refresh" content="https://rufacisten.space/"-->
+
+        <link rel="stylesheet" href="/app/css/buttons.css">
+        <link rel="stylesheet" href="/app/css/style.css">
+        <script src="/js/magicline.min.js"></script>
+        <script src="/js/magicline.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <video src="https://cdn.discordapp.com/attachments/972134235588657246/1024035463209680926/pentagon.mp4" class="vid-bg" autoplay loop muted></video>
+            <div class="welcome-text">
+                <h2><span style="color: #e74949;">ERROR</span> 404</h2></span></p>
+                <p>Наладим всё в ближайшее время</p>
+                <p>На фоне хуячат наши разработчики, как вы видете они профи в своём деле!</p>
+                <br><br>
+                    <nav class="magic-line-menu-pill">
+                      <a href="https://rufacisten.space/" ><span style="color: #ff0000;">👑 RUFACISTEN GUILD</span></a>
+                      <a href="https://exceptionh.github.io/discord.html" class="active"><span style="color: #054677;">👑 DISCORD RUFACISTEN</span></a>
+                    </nav>
+        </header>   
+    </body>
+      <script>
+        var myMagicPill = new magicLine(
+          document.querySelectorAll('.magic-line-menu-pill'),
+          {
+            mode: 'pill',
+            animationCallback: function (el, params) {
+              anime({
+                targets: el,
+                left: params.left,
+                top: params.top,
+                width: params.width,
+                height: params.height
+              });
+            }
+          }
+        );
+        myMagicPill.init();
+    
+        var myMagicLine = new magicLine(
+          document.querySelectorAll('.magic-line-menu'),
+          {
+            mode: 'line',
+            animationCallback: function (el, params) {
+              anime({
+                targets: el,
+                left: params.left,
+                top: params.top,
+                width: params.width,
+                height: params.height
+              });
+            }
+          }
+        );
+        myMagicLine.init();
+      </script>
+    </html>
