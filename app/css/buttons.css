@@ -1,0 +1,48 @@
+.init-magic-line,
+.magic-line-inner {
+  position: relative;
+}
+
+.magic-line {
+  z-index: -1;
+  position: absolute;
+}
+
+.magic-line-css-transition {
+  transition: all .2s ease-in-out;
+}
+
+.wrapper {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.magic-line-menu,
+.magic-line-menu-pill,
+.magic-line-inner,
+.magic-line-inner ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.magic-line-inner ul {
+  list-style: none;
+}
+
+.magic-line-menu a,
+.magic-line-menu-pill a {
+  font-weight: 700;
+  color: #c90076;
+  text-align: center;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+}
+
+.magic-line {
+  border-radius: 4px;
+  background: #FFF;
+  box-shadow: 0 0 10px rgba(90, 129, 177, 0.6);
+}
